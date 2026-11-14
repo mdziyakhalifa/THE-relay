@@ -1,0 +1,2075 @@
+{
+  "meta": {
+    "last_run": "wp11-eval-c-114348"
+  },
+  "results": {
+    "B": [
+      {
+        "request_id": "wp11-eval-b-114326-000",
+        "paper_key": "attention",
+        "question": "How does multi-head attention extend the attention mechanism?",
+        "setting": "B",
+        "expected_facts": [
+          "parallel",
+          "attention layers"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p4|0",
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p6|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p15|0",
+          "attention|1706.03762v7|p14|0",
+          "attention|1706.03762v7|p13|0",
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p4|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.5",
+        "canned_answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 38.2,
+        "total_ms": 41.35939999991933,
+        "wall_ms": 52.3,
+        "tokens_in": 2047,
+        "tokens_out": 48,
+        "answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-001",
+        "paper_key": "attention",
+        "question": "Why is the learning rate warmed up and then decayed?",
+        "setting": "B",
+        "expected_facts": [
+          "linear",
+          "square root"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p7|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p35|1",
+          "hnet|2507.07955v2|p12|0",
+          "hnet|2507.07955v2|p8|1",
+          "hnet|2507.07955v2|p9|1",
+          "attention|1706.03762v7|p4|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.35",
+        "canned_answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:2507.07955v2 p.35]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.3,
+        "total_ms": 36.08680000002096,
+        "wall_ms": 43.2,
+        "tokens_in": 3735,
+        "tokens_out": 66,
+        "answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:2507.07955v2 p.35]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-002",
+        "paper_key": "attention",
+        "question": "What label smoothing value did the Transformer use, and what did it trade off?",
+        "setting": "B",
+        "expected_facts": [
+          "0.1",
+          "perplexity",
+          "BLEU"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p12|2",
+          "hnet|2507.07955v2|p16|0",
+          "attention|1706.03762v7|p9|0",
+          "hnet|2507.07955v2|p14|0",
+          "hnet|2507.07955v2|p8|2"
+        ],
+        "cited_chunk": "2507.07955v2 p.12",
+        "canned_answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:2507.07955v2 p.12]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 33.4,
+        "total_ms": 36.50080000011258,
+        "wall_ms": 44.2,
+        "tokens_in": 4563,
+        "tokens_out": 62,
+        "answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:2507.07955v2 p.12]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-003",
+        "paper_key": "attention",
+        "question": "How does the Transformer inject word-order information without recurrence or convolution?",
+        "setting": "B",
+        "expected_facts": [
+          "positional encoding",
+          "sine",
+          "cosine"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p6|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p2|2",
+          "moshi|2410.00037v1|p13|0",
+          "hnet|2507.07955v2|p25|2",
+          "attention|1706.03762v7|p2|1",
+          "hnet|2507.07955v2|p30|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.2",
+        "canned_answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.4,
+        "total_ms": 34.92180000012013,
+        "wall_ms": 43.2,
+        "tokens_in": 3871,
+        "tokens_out": 52,
+        "answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-004",
+        "paper_key": "attention",
+        "question": "What BLEU scores did the big Transformer achieve on WMT 2014 English-to-German and English-to-French?",
+        "setting": "B",
+        "expected_facts": [
+          "28.4",
+          "41.8"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p1|0",
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p8|0",
+          "attention|1706.03762v7|p9|0",
+          "hnet|2507.07955v2|p16|0",
+          "attention|1706.03762v7|p8|1",
+          "moshi|2410.00037v1|p50|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.8",
+        "canned_answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 37.7,
+        "total_ms": 41.69610000008106,
+        "wall_ms": 49.6,
+        "tokens_in": 4653,
+        "tokens_out": 74,
+        "answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-005",
+        "paper_key": "moshi",
+        "question": "How does Moshi talk and listen at the same time?",
+        "setting": "B",
+        "expected_facts": [
+          "full-duplex",
+          "real-time"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p1|1",
+          "moshi|2410.00037v1|p2|1",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p41|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p18|1",
+          "moshi|2410.00037v1|p19|0",
+          "moshi|2410.00037v1|p37|1",
+          "moshi|2410.00037v1|p28|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.6",
+        "canned_answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.6]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 37.9,
+        "total_ms": 41.806599999972605,
+        "wall_ms": 49.2,
+        "tokens_in": 3167,
+        "tokens_out": 60,
+        "answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.6]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-006",
+        "paper_key": "moshi",
+        "question": "What are semantic and acoustic audio tokens in Mimi?",
+        "setting": "B",
+        "expected_facts": [
+          "semantic",
+          "acoustic",
+          "Mimi"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p4|0",
+          "moshi|2410.00037v1|p4|1",
+          "moshi|2410.00037v1|p5|0",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p9|0",
+          "moshi|2410.00037v1|p9|1",
+          "moshi|2410.00037v1|p10|0",
+          "moshi|2410.00037v1|p11|1",
+          "moshi|2410.00037v1|p12|0",
+          "moshi|2410.00037v1|p14|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p15|0",
+          "moshi|2410.00037v1|p15|1",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p23|0",
+          "moshi|2410.00037v1|p23|1",
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p25|0",
+          "moshi|2410.00037v1|p25|1",
+          "moshi|2410.00037v1|p26|1",
+          "moshi|2410.00037v1|p27|1",
+          "moshi|2410.00037v1|p28|1",
+          "moshi|2410.00037v1|p29|1",
+          "moshi|2410.00037v1|p34|0",
+          "moshi|2410.00037v1|p41|0",
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p57|0",
+          "moshi|2410.00037v1|p58|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p9|1",
+          "moshi|2410.00037v1|p15|1",
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p15|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.9",
+        "canned_answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.9]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 34.0,
+        "total_ms": 37.287299999889,
+        "wall_ms": 46.0,
+        "tokens_in": 3751,
+        "tokens_out": 58,
+        "answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.9]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-007",
+        "paper_key": "moshi",
+        "question": "What is the role of the Depth Transformer in Moshi's architecture?",
+        "setting": "B",
+        "expected_facts": [
+          "Depth Transformer",
+          "streaming"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p21|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p14|0",
+          "moshi|2410.00037v1|p6|1",
+          "hnet|2507.07955v2|p16|0",
+          "hnet|2507.07955v2|p17|0",
+          "attention|1706.03762v7|p3|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.14",
+        "canned_answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.14]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 33.0,
+        "total_ms": 36.834600000020146,
+        "wall_ms": 44.2,
+        "tokens_in": 4499,
+        "tokens_out": 76,
+        "answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.14]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-008",
+        "paper_key": "moshi",
+        "question": "What is Inner Monologue and what does it improve?",
+        "setting": "B",
+        "expected_facts": [
+          "Inner Monologue",
+          "text tokens",
+          "factuality"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p31|0",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p26|1",
+          "moshi|2410.00037v1|p28|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.31",
+        "canned_answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.31]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.8,
+        "total_ms": 35.349600000017745,
+        "wall_ms": 43.4,
+        "tokens_in": 4531,
+        "tokens_out": 64,
+        "answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.31]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-b-114326-009",
+        "paper_key": "moshi",
+        "question": "Why does Moshi force a delay between text and audio tokens?",
+        "setting": "B",
+        "expected_facts": [
+          "delay",
+          "ASR",
+          "TTS"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p31|0",
+          "moshi|2410.00037v1|p41|1",
+          "moshi|2410.00037v1|p55|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p20|1",
+          "moshi|2410.00037v1|p58|1",
+          "moshi|2410.00037v1|p35|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.16",
+        "canned_answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 34.4,
+        "total_ms": 37.256499999784864,
+        "wall_ms": 44.5,
+        "tokens_in": 4485,
+        "tokens_out": 58,
+        "answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-010",
+        "paper_key": "hnet",
+        "question": "What does dynamic chunking replace in hierarchical models?",
+        "setting": "B",
+        "expected_facts": [
+          "tokenization",
+          "dynamic chunking"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|0",
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p13|0",
+          "hnet|2507.07955v2|p31|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p9|2",
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p4|0",
+          "hnet|2507.07955v2|p1|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 30.8,
+        "total_ms": 34.52600000014172,
+        "wall_ms": 42.6,
+        "tokens_in": 4159,
+        "tokens_out": 58,
+        "answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-011",
+        "paper_key": "hnet",
+        "question": "How does H-Net select chunk boundaries robustly?",
+        "setting": "B",
+        "expected_facts": [
+          "routing",
+          "smoothing"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p6|1",
+          "hnet|2507.07955v2|p17|1",
+          "hnet|2507.07955v2|p18|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p12|1",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p9|2",
+          "hnet|2507.07955v2|p33|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.3",
+        "canned_answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.7,
+        "total_ms": 35.399699999970835,
+        "wall_ms": 41.9,
+        "tokens_in": 4177,
+        "tokens_out": 54,
+        "answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-012",
+        "paper_key": "hnet",
+        "question": "Describe the three stages of H-Net's hierarchical processing.",
+        "setting": "B",
+        "expected_facts": [
+          "encoder",
+          "main network",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p4|2",
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p5|1",
+          "hnet|2507.07955v2|p6|0",
+          "hnet|2507.07955v2|p9|0",
+          "hnet|2507.07955v2|p9|1",
+          "hnet|2507.07955v2|p10|0",
+          "hnet|2507.07955v2|p19|0",
+          "hnet|2507.07955v2|p20|0",
+          "hnet|2507.07955v2|p22|0",
+          "hnet|2507.07955v2|p37|0",
+          "hnet|2507.07955v2|p37|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p4|2",
+          "hnet|2507.07955v2|p21|0",
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p15|2",
+          "hnet|2507.07955v2|p4|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.4",
+        "canned_answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.4]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.5,
+        "total_ms": 34.931599999936225,
+        "wall_ms": 41.6,
+        "tokens_in": 3443,
+        "tokens_out": 74,
+        "answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.4]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-013",
+        "paper_key": "hnet",
+        "question": "What drawbacks of fixed-vocabulary tokenization motivate end-to-end byte-level models?",
+        "setting": "B",
+        "expected_facts": [
+          "byte-pair encoding",
+          "character"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|1",
+          "hnet|2507.07955v2|p31|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p1|1",
+          "hnet|2507.07955v2|p34|2",
+          "hnet|2507.07955v2|p25|0",
+          "hnet|2507.07955v2|p28|1",
+          "hnet|2507.07955v2|p34|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 36.7,
+        "total_ms": 40.6719999998586,
+        "wall_ms": 48.9,
+        "tokens_in": 4291,
+        "tokens_out": 64,
+        "answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-014",
+        "paper_key": "hnet",
+        "question": "Why is simple pooling (compressing every d inputs) inadequate for byte-level modeling?",
+        "setting": "B",
+        "expected_facts": [
+          "data-dependent",
+          "variable information rates"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p23|0",
+          "hnet|2507.07955v2|p19|1",
+          "hnet|2507.07955v2|p22|0",
+          "hnet|2507.07955v2|p39|2"
+        ],
+        "cited_chunk": "2507.07955v2 p.2",
+        "canned_answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.5,
+        "total_ms": 36.645600000156264,
+        "wall_ms": 43.9,
+        "tokens_in": 4001,
+        "tokens_out": 66,
+        "answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-b-114326-015",
+        "paper_key": "cross",
+        "question": "How are encoder and decoder used differently in these models?",
+        "setting": "B",
+        "expected_facts": [
+          "encoder",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": null,
+        "ground_truth_retrieved": null,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p3|0",
+          "hnet|2507.07955v2|p19|1",
+          "hnet|2507.07955v2|p18|1",
+          "hnet|2507.07955v2|p19|0",
+          "attention|1706.03762v7|p2|2"
+        ],
+        "cited_chunk": "1706.03762v7 p.3",
+        "canned_answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.8,
+        "total_ms": 36.01229999981115,
+        "wall_ms": 44.7,
+        "tokens_in": 3443,
+        "tokens_out": 64,
+        "answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      }
+    ],
+    "A": [
+      {
+        "request_id": "wp11-eval-a-114302-000",
+        "paper_key": "attention",
+        "question": "How does multi-head attention extend the attention mechanism?",
+        "setting": "A",
+        "expected_facts": [
+          "parallel",
+          "attention layers"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p4|0",
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p6|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p15|0",
+          "attention|1706.03762v7|p14|0",
+          "attention|1706.03762v7|p13|0",
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p3|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.5",
+        "canned_answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 35.2,
+        "total_ms": 39.38859999993838,
+        "wall_ms": 51.7,
+        "tokens_in": 1727,
+        "tokens_out": 48,
+        "answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-001",
+        "paper_key": "attention",
+        "question": "Why is the learning rate warmed up and then decayed?",
+        "setting": "A",
+        "expected_facts": [
+          "linear",
+          "square root"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p7|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p7|2",
+          "hnet|2507.07955v2|p12|0",
+          "hnet|2507.07955v2|p35|2",
+          "hnet|2507.07955v2|p9|2",
+          "hnet|2507.07955v2|p17|3"
+        ],
+        "cited_chunk": "1706.03762v7 p.7",
+        "canned_answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:1706.03762v7 p.7]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.1,
+        "total_ms": 35.23440000003575,
+        "wall_ms": 41.9,
+        "tokens_in": 2315,
+        "tokens_out": 66,
+        "answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:1706.03762v7 p.7]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-002",
+        "paper_key": "attention",
+        "question": "What label smoothing value did the Transformer use, and what did it trade off?",
+        "setting": "A",
+        "expected_facts": [
+          "0.1",
+          "perplexity",
+          "BLEU"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p10|2",
+          "attention|1706.03762v7|p8|2",
+          "hnet|2507.07955v2|p16|0",
+          "hnet|2507.07955v2|p12|3",
+          "attention|1706.03762v7|p9|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.10",
+        "canned_answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:2410.00037v1 p.10]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.5,
+        "total_ms": 35.98420000002989,
+        "wall_ms": 43.3,
+        "tokens_in": 2863,
+        "tokens_out": 62,
+        "answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:2410.00037v1 p.10]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-003",
+        "paper_key": "attention",
+        "question": "How does the Transformer inject word-order information without recurrence or convolution?",
+        "setting": "A",
+        "expected_facts": [
+          "positional encoding",
+          "sine",
+          "cosine"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p6|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p2|3",
+          "moshi|2410.00037v1|p13|0",
+          "moshi|2410.00037v1|p44|1",
+          "attention|1706.03762v7|p2|2",
+          "hnet|2507.07955v2|p27|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.2",
+        "canned_answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 29.2,
+        "total_ms": 32.69700000009834,
+        "wall_ms": 39.8,
+        "tokens_in": 2923,
+        "tokens_out": 52,
+        "answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-004",
+        "paper_key": "attention",
+        "question": "What BLEU scores did the big Transformer achieve on WMT 2014 English-to-German and English-to-French?",
+        "setting": "A",
+        "expected_facts": [
+          "28.4",
+          "41.8"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p1|0",
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p8|0",
+          "attention|1706.03762v7|p8|1",
+          "attention|1706.03762v7|p1|1",
+          "attention|1706.03762v7|p9|0",
+          "attention|1706.03762v7|p8|2"
+        ],
+        "cited_chunk": "1706.03762v7 p.8",
+        "canned_answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 31.1,
+        "total_ms": 35.30819999991763,
+        "wall_ms": 43.6,
+        "tokens_in": 3433,
+        "tokens_out": 74,
+        "answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-005",
+        "paper_key": "moshi",
+        "question": "How does Moshi talk and listen at the same time?",
+        "setting": "A",
+        "expected_facts": [
+          "full-duplex",
+          "real-time"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p1|1",
+          "moshi|2410.00037v1|p2|1",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p41|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p6|2",
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p37|2",
+          "moshi|2410.00037v1|p18|2",
+          "moshi|2410.00037v1|p3|3"
+        ],
+        "cited_chunk": "2410.00037v1 p.6",
+        "canned_answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.6]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 28.2,
+        "total_ms": 32.17059999997218,
+        "wall_ms": 41.0,
+        "tokens_in": 1635,
+        "tokens_out": 60,
+        "answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.6]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-006",
+        "paper_key": "moshi",
+        "question": "What are semantic and acoustic audio tokens in Mimi?",
+        "setting": "A",
+        "expected_facts": [
+          "semantic",
+          "acoustic",
+          "Mimi"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p4|0",
+          "moshi|2410.00037v1|p4|1",
+          "moshi|2410.00037v1|p5|0",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p9|0",
+          "moshi|2410.00037v1|p9|1",
+          "moshi|2410.00037v1|p10|0",
+          "moshi|2410.00037v1|p11|1",
+          "moshi|2410.00037v1|p12|0",
+          "moshi|2410.00037v1|p14|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p15|0",
+          "moshi|2410.00037v1|p15|1",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p23|0",
+          "moshi|2410.00037v1|p23|1",
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p25|0",
+          "moshi|2410.00037v1|p25|1",
+          "moshi|2410.00037v1|p26|1",
+          "moshi|2410.00037v1|p27|1",
+          "moshi|2410.00037v1|p28|1",
+          "moshi|2410.00037v1|p29|1",
+          "moshi|2410.00037v1|p34|0",
+          "moshi|2410.00037v1|p41|0",
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p57|0",
+          "moshi|2410.00037v1|p58|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p9|2",
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p15|1",
+          "moshi|2410.00037v1|p57|1",
+          "moshi|2410.00037v1|p56|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.24",
+        "canned_answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.24]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.7,
+        "total_ms": 36.4079999999376,
+        "wall_ms": 45.1,
+        "tokens_in": 2825,
+        "tokens_out": 58,
+        "answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.24]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-007",
+        "paper_key": "moshi",
+        "question": "What is the role of the Depth Transformer in Moshi's architecture?",
+        "setting": "A",
+        "expected_facts": [
+          "Depth Transformer",
+          "streaming"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p21|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p6|2",
+          "moshi|2410.00037v1|p14|0",
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p7|1",
+          "hnet|2507.07955v2|p16|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.6",
+        "canned_answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.6]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.7,
+        "total_ms": 36.323699999911696,
+        "wall_ms": 44.9,
+        "tokens_in": 2861,
+        "tokens_out": 76,
+        "answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.6]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-008",
+        "paper_key": "moshi",
+        "question": "What is Inner Monologue and what does it improve?",
+        "setting": "A",
+        "expected_facts": [
+          "Inner Monologue",
+          "text tokens",
+          "factuality"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p31|0",
+          "moshi|2410.00037v1|p28|1",
+          "moshi|2410.00037v1|p41|2",
+          "moshi|2410.00037v1|p29|2"
+        ],
+        "cited_chunk": "2410.00037v1 p.5",
+        "canned_answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.5]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.8,
+        "total_ms": 35.92800000001262,
+        "wall_ms": 43.3,
+        "tokens_in": 2699,
+        "tokens_out": 64,
+        "answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.5]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-009",
+        "paper_key": "moshi",
+        "question": "Why does Moshi force a delay between text and audio tokens?",
+        "setting": "A",
+        "expected_facts": [
+          "delay",
+          "ASR",
+          "TTS"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p31|0",
+          "moshi|2410.00037v1|p41|1",
+          "moshi|2410.00037v1|p55|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p55|1",
+          "moshi|2410.00037v1|p58|1",
+          "moshi|2410.00037v1|p6|1"
+        ],
+        "cited_chunk": "2410.00037v1 p.16",
+        "canned_answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 39.3,
+        "total_ms": 44.05100000008133,
+        "wall_ms": 53.9,
+        "tokens_in": 3197,
+        "tokens_out": 58,
+        "answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-010",
+        "paper_key": "hnet",
+        "question": "What does dynamic chunking replace in hierarchical models?",
+        "setting": "A",
+        "expected_facts": [
+          "tokenization",
+          "dynamic chunking"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|0",
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p13|0",
+          "hnet|2507.07955v2|p31|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p9|3",
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p4|0",
+          "hnet|2507.07955v2|p1|0",
+          "hnet|2507.07955v2|p2|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 38.5,
+        "total_ms": 42.99769999988712,
+        "wall_ms": 51.8,
+        "tokens_in": 3031,
+        "tokens_out": 58,
+        "answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-011",
+        "paper_key": "hnet",
+        "question": "How does H-Net select chunk boundaries robustly?",
+        "setting": "A",
+        "expected_facts": [
+          "routing",
+          "smoothing"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p6|1",
+          "hnet|2507.07955v2|p17|1",
+          "hnet|2507.07955v2|p18|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p14|2",
+          "hnet|2507.07955v2|p32|3",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p36|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.3",
+        "canned_answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 35.7,
+        "total_ms": 39.23719999988862,
+        "wall_ms": 48.6,
+        "tokens_in": 3109,
+        "tokens_out": 54,
+        "answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-012",
+        "paper_key": "hnet",
+        "question": "Describe the three stages of H-Net's hierarchical processing.",
+        "setting": "A",
+        "expected_facts": [
+          "encoder",
+          "main network",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p4|2",
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p5|1",
+          "hnet|2507.07955v2|p6|0",
+          "hnet|2507.07955v2|p9|0",
+          "hnet|2507.07955v2|p9|1",
+          "hnet|2507.07955v2|p10|0",
+          "hnet|2507.07955v2|p19|0",
+          "hnet|2507.07955v2|p20|0",
+          "hnet|2507.07955v2|p22|0",
+          "hnet|2507.07955v2|p37|0",
+          "hnet|2507.07955v2|p37|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p21|0",
+          "hnet|2507.07955v2|p4|3",
+          "hnet|2507.07955v2|p2|4",
+          "hnet|2507.07955v2|p16|3",
+          "hnet|2507.07955v2|p4|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.21",
+        "canned_answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.21]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 33.8,
+        "total_ms": 38.36700000010751,
+        "wall_ms": 46.6,
+        "tokens_in": 2115,
+        "tokens_out": 74,
+        "answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.21]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-013",
+        "paper_key": "hnet",
+        "question": "What drawbacks of fixed-vocabulary tokenization motivate end-to-end byte-level models?",
+        "setting": "A",
+        "expected_facts": [
+          "byte-pair encoding",
+          "character"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|1",
+          "hnet|2507.07955v2|p31|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p1|2",
+          "hnet|2507.07955v2|p34|3",
+          "hnet|2507.07955v2|p28|2",
+          "hnet|2507.07955v2|p25|0",
+          "hnet|2507.07955v2|p34|2"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 32.6,
+        "total_ms": 35.71430000010878,
+        "wall_ms": 44.8,
+        "tokens_in": 3007,
+        "tokens_out": 64,
+        "answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-a-114302-014",
+        "paper_key": "hnet",
+        "question": "Why is simple pooling (compressing every d inputs) inadequate for byte-level modeling?",
+        "setting": "A",
+        "expected_facts": [
+          "data-dependent",
+          "variable information rates"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p19|1",
+          "hnet|2507.07955v2|p23|0",
+          "hnet|2507.07955v2|p19|2",
+          "hnet|2507.07955v2|p5|2"
+        ],
+        "cited_chunk": "2507.07955v2 p.2",
+        "canned_answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 36.6,
+        "total_ms": 41.99320000020634,
+        "wall_ms": 50.6,
+        "tokens_in": 2859,
+        "tokens_out": 66,
+        "answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-a-114302-015",
+        "paper_key": "cross",
+        "question": "How are encoder and decoder used differently in these models?",
+        "setting": "A",
+        "expected_facts": [
+          "encoder",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": null,
+        "ground_truth_retrieved": null,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p3|0",
+          "hnet|2507.07955v2|p5|1",
+          "attention|1706.03762v7|p2|3",
+          "hnet|2507.07955v2|p19|2",
+          "hnet|2507.07955v2|p19|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.3",
+        "canned_answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 35.0,
+        "total_ms": 40.187400000149864,
+        "wall_ms": 49.1,
+        "tokens_in": 2985,
+        "tokens_out": 64,
+        "answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      }
+    ],
+    "C": [
+      {
+        "request_id": "wp11-eval-c-114348-000",
+        "paper_key": "attention",
+        "question": "How does multi-head attention extend the attention mechanism?",
+        "setting": "C",
+        "expected_facts": [
+          "parallel",
+          "attention layers"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p4|0",
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p6|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p5|0",
+          "attention|1706.03762v7|p4|0",
+          "attention|1706.03762v7|p13|0",
+          "attention|1706.03762v7|p14|0",
+          "attention|1706.03762v7|p15|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.5",
+        "canned_answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 446.9,
+        "total_ms": 450.1860999998826,
+        "wall_ms": 460.7,
+        "tokens_in": 3187,
+        "tokens_out": 48,
+        "answer": "Multi-head attention extends attention by running several attention layers in parallel. [arXiv:1706.03762v7 p.5]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-001",
+        "paper_key": "attention",
+        "question": "Why is the learning rate warmed up and then decayed?",
+        "setting": "C",
+        "expected_facts": [
+          "linear",
+          "square root"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p7|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p12|0",
+          "attention|1706.03762v7|p7|1",
+          "moshi|2410.00037v1|p11|0",
+          "hnet|2507.07955v2|p27|1",
+          "hnet|2507.07955v2|p7|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.7",
+        "canned_answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:1706.03762v7 p.7]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 423.0,
+        "total_ms": 427.18630000013036,
+        "wall_ms": 434.7,
+        "tokens_in": 4777,
+        "tokens_out": 66,
+        "answer": "The learning rate increases linearly for the first warmup_steps and then decreases proportionally to the inverse square root of the step number. [arXiv:1706.03762v7 p.7]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-002",
+        "paper_key": "attention",
+        "question": "What label smoothing value did the Transformer use, and what did it trade off?",
+        "setting": "C",
+        "expected_facts": [
+          "0.1",
+          "perplexity",
+          "BLEU"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p9|0",
+          "hnet|2507.07955v2|p16|0",
+          "hnet|2507.07955v2|p17|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.9",
+        "canned_answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:1706.03762v7 p.9]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 427.7,
+        "total_ms": 430.6305000000066,
+        "wall_ms": 437.5,
+        "tokens_in": 4929,
+        "tokens_out": 62,
+        "answer": "The Transformer used label smoothing of value 0.1, which hurts perplexity but improves accuracy and BLEU score. [arXiv:1706.03762v7 p.9]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-c-114348-003",
+        "paper_key": "attention",
+        "question": "How does the Transformer inject word-order information without recurrence or convolution?",
+        "setting": "C",
+        "expected_facts": [
+          "positional encoding",
+          "sine",
+          "cosine"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p6|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p2|1",
+          "moshi|2410.00037v1|p13|0",
+          "hnet|2507.07955v2|p28|0",
+          "hnet|2507.07955v2|p30|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.2",
+        "canned_answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 431.8,
+        "total_ms": 434.8793999999998,
+        "wall_ms": 441.6,
+        "tokens_in": 4550,
+        "tokens_out": 52,
+        "answer": "Word order is injected through positional encoding using sine and cosine functions of different frequencies. [arXiv:1706.03762v7 p.2]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-c-114348-004",
+        "paper_key": "attention",
+        "question": "What BLEU scores did the big Transformer achieve on WMT 2014 English-to-German and English-to-French?",
+        "setting": "C",
+        "expected_facts": [
+          "28.4",
+          "41.8"
+        ],
+        "ground_truth_chunk_ids": [
+          "attention|1706.03762v7|p1|0",
+          "attention|1706.03762v7|p8|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p8|0",
+          "attention|1706.03762v7|p10|0",
+          "attention|1706.03762v7|p9|0",
+          "hnet|2507.07955v2|p12|1"
+        ],
+        "cited_chunk": "1706.03762v7 p.8",
+        "canned_answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 460.1,
+        "total_ms": 463.34060000003774,
+        "wall_ms": 470.3,
+        "tokens_in": 5412,
+        "tokens_out": 74,
+        "answer": "The big Transformer achieved 28.4 BLEU on WMT 2014 English-to-German and 41.8 on English-to-French. [arXiv:1706.03762v7 p.8]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-005",
+        "paper_key": "moshi",
+        "question": "How does Moshi talk and listen at the same time?",
+        "setting": "C",
+        "expected_facts": [
+          "full-duplex",
+          "real-time"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p1|1",
+          "moshi|2410.00037v1|p2|1",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p41|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p19|0",
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p28|0",
+          "moshi|2410.00037v1|p66|0",
+          "moshi|2410.00037v1|p3|1"
+        ],
+        "cited_chunk": "2410.00037v1 p.1",
+        "canned_answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 433.5,
+        "total_ms": 436.2220000000434,
+        "wall_ms": 444.3,
+        "tokens_in": 4109,
+        "tokens_out": 60,
+        "answer": "Moshi is a full-duplex spoken dialogue framework that always listens and always speaks in real-time. [arXiv:2410.00037v1 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-006",
+        "paper_key": "moshi",
+        "question": "What are semantic and acoustic audio tokens in Mimi?",
+        "setting": "C",
+        "expected_facts": [
+          "semantic",
+          "acoustic",
+          "Mimi"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p1|0",
+          "moshi|2410.00037v1|p3|0",
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p4|0",
+          "moshi|2410.00037v1|p4|1",
+          "moshi|2410.00037v1|p5|0",
+          "moshi|2410.00037v1|p6|0",
+          "moshi|2410.00037v1|p6|1",
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p9|0",
+          "moshi|2410.00037v1|p9|1",
+          "moshi|2410.00037v1|p10|0",
+          "moshi|2410.00037v1|p11|1",
+          "moshi|2410.00037v1|p12|0",
+          "moshi|2410.00037v1|p14|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p15|0",
+          "moshi|2410.00037v1|p15|1",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p23|0",
+          "moshi|2410.00037v1|p23|1",
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p25|0",
+          "moshi|2410.00037v1|p25|1",
+          "moshi|2410.00037v1|p26|1",
+          "moshi|2410.00037v1|p27|1",
+          "moshi|2410.00037v1|p28|1",
+          "moshi|2410.00037v1|p29|1",
+          "moshi|2410.00037v1|p34|0",
+          "moshi|2410.00037v1|p41|0",
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p57|0",
+          "moshi|2410.00037v1|p58|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p24|0",
+          "moshi|2410.00037v1|p24|1",
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p15|0",
+          "moshi|2410.00037v1|p16|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.24",
+        "canned_answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.24]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 418.8,
+        "total_ms": 421.7443000000003,
+        "wall_ms": 428.8,
+        "tokens_in": 5125,
+        "tokens_out": 58,
+        "answer": "Mimi produces discrete audio tokens whose first level carries semantic information while the remaining levels carry acoustic detail. [arXiv:2410.00037v1 p.24]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-007",
+        "paper_key": "moshi",
+        "question": "What is the role of the Depth Transformer in Moshi's architecture?",
+        "setting": "C",
+        "expected_facts": [
+          "Depth Transformer",
+          "streaming"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p7|0",
+          "moshi|2410.00037v1|p14|1",
+          "moshi|2410.00037v1|p21|0"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p13|0",
+          "moshi|2410.00037v1|p14|0",
+          "attention|1706.03762v7|p3|0",
+          "hnet|2507.07955v2|p17|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.13",
+        "canned_answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.13]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 423.3,
+        "total_ms": 426.78109999997105,
+        "wall_ms": 434.0,
+        "tokens_in": 5424,
+        "tokens_out": 76,
+        "answer": "The Depth Transformer jointly models the audio streams of Moshi and the user together with Moshi's text tokens, and is compatible with streaming inference. [arXiv:2410.00037v1 p.13]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-c-114348-008",
+        "paper_key": "moshi",
+        "question": "What is Inner Monologue and what does it improve?",
+        "setting": "C",
+        "expected_facts": [
+          "Inner Monologue",
+          "text tokens",
+          "factuality"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1"
+        ],
+        "ground_truth_retrieved": false,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p28|0",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p6|0"
+        ],
+        "cited_chunk": "2410.00037v1 p.28",
+        "canned_answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.28]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 426.5,
+        "total_ms": 429.2312000000038,
+        "wall_ms": 436.9,
+        "tokens_in": 4049,
+        "tokens_out": 64,
+        "answer": "Inner Monologue predicts time-aligned text tokens before audio tokens, improving the factuality and linguistic quality of generated speech. [arXiv:2410.00037v1 p.28]",
+        "grade": "incorrect",
+        "missing_facts": [],
+        "reasons": [
+          "retrieval miss: no ground-truth chunk in delivered evidence"
+        ]
+      },
+      {
+        "request_id": "wp11-eval-c-114348-009",
+        "paper_key": "moshi",
+        "question": "Why does Moshi force a delay between text and audio tokens?",
+        "setting": "C",
+        "expected_facts": [
+          "delay",
+          "ASR",
+          "TTS"
+        ],
+        "ground_truth_chunk_ids": [
+          "moshi|2410.00037v1|p3|1",
+          "moshi|2410.00037v1|p5|1",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p16|1",
+          "moshi|2410.00037v1|p31|0",
+          "moshi|2410.00037v1|p41|1",
+          "moshi|2410.00037v1|p55|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "moshi|2410.00037v1|p56|0",
+          "moshi|2410.00037v1|p16|0",
+          "moshi|2410.00037v1|p35|0",
+          "moshi|2410.00037v1|p59|0",
+          "moshi|2410.00037v1|p58|1"
+        ],
+        "cited_chunk": "2410.00037v1 p.16",
+        "canned_answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 469.3,
+        "total_ms": 472.8761999999733,
+        "wall_ms": 479.9,
+        "tokens_in": 5155,
+        "tokens_out": 58,
+        "answer": "Forcing a delay between text and audio tokens allows deriving streaming ASR and streaming TTS from the model. [arXiv:2410.00037v1 p.16]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-010",
+        "paper_key": "hnet",
+        "question": "What does dynamic chunking replace in hierarchical models?",
+        "setting": "C",
+        "expected_facts": [
+          "tokenization",
+          "dynamic chunking"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|0",
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p13|0",
+          "hnet|2507.07955v2|p31|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p1|0",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p4|0",
+          "hnet|2507.07955v2|p21|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 442.5,
+        "total_ms": 445.8563000000595,
+        "wall_ms": 452.5,
+        "tokens_in": 3916,
+        "tokens_out": 58,
+        "answer": "Dynamic chunking replaces fixed-vocabulary tokenization with content- and context-dependent segmentation learned from data. [arXiv:2507.07955v2 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-011",
+        "paper_key": "hnet",
+        "question": "How does H-Net select chunk boundaries robustly?",
+        "setting": "C",
+        "expected_facts": [
+          "routing",
+          "smoothing"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p6|1",
+          "hnet|2507.07955v2|p17|1",
+          "hnet|2507.07955v2|p18|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p14|1",
+          "hnet|2507.07955v2|p33|0",
+          "hnet|2507.07955v2|p3|0",
+          "hnet|2507.07955v2|p10|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.3",
+        "canned_answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 468.7,
+        "total_ms": 472.3046000001432,
+        "wall_ms": 480.1,
+        "tokens_in": 4509,
+        "tokens_out": 54,
+        "answer": "A routing module dynamically draws chunk boundaries, and a smoothing module makes the boundaries robust. [arXiv:2507.07955v2 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-012",
+        "paper_key": "hnet",
+        "question": "Describe the three stages of H-Net's hierarchical processing.",
+        "setting": "C",
+        "expected_facts": [
+          "encoder",
+          "main network",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|1",
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p4|2",
+          "hnet|2507.07955v2|p5|0",
+          "hnet|2507.07955v2|p5|1",
+          "hnet|2507.07955v2|p6|0",
+          "hnet|2507.07955v2|p9|0",
+          "hnet|2507.07955v2|p9|1",
+          "hnet|2507.07955v2|p10|0",
+          "hnet|2507.07955v2|p19|0",
+          "hnet|2507.07955v2|p20|0",
+          "hnet|2507.07955v2|p22|0",
+          "hnet|2507.07955v2|p37|0",
+          "hnet|2507.07955v2|p37|1"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p4|1",
+          "hnet|2507.07955v2|p4|0",
+          "hnet|2507.07955v2|p21|0",
+          "hnet|2507.07955v2|p5|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.4",
+        "canned_answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.4]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 447.8,
+        "total_ms": 450.4481000001306,
+        "wall_ms": 456.9,
+        "tokens_in": 3926,
+        "tokens_out": 74,
+        "answer": "Raw data is processed by a small encoder network, downsampled through a main network operating on compressed chunks, then upsampled through a decoder network. [arXiv:2507.07955v2 p.4]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-013",
+        "paper_key": "hnet",
+        "question": "What drawbacks of fixed-vocabulary tokenization motivate end-to-end byte-level models?",
+        "setting": "C",
+        "expected_facts": [
+          "byte-pair encoding",
+          "character"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p1|1",
+          "hnet|2507.07955v2|p31|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p1|1",
+          "hnet|2507.07955v2|p26|0",
+          "hnet|2507.07955v2|p34|1",
+          "hnet|2507.07955v2|p33|1",
+          "hnet|2507.07955v2|p25|0"
+        ],
+        "cited_chunk": "2507.07955v2 p.1",
+        "canned_answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 444.6,
+        "total_ms": 447.8096000000278,
+        "wall_ms": 454.7,
+        "tokens_in": 5105,
+        "tokens_out": 64,
+        "answer": "Fixed-vocabulary byte-pair encoding causes poor character-level understanding, lack of interpretability, and degraded performance. [arXiv:2507.07955v2 p.1]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-014",
+        "paper_key": "hnet",
+        "question": "Why is simple pooling (compressing every d inputs) inadequate for byte-level modeling?",
+        "setting": "C",
+        "expected_facts": [
+          "data-dependent",
+          "variable information rates"
+        ],
+        "ground_truth_chunk_ids": [
+          "hnet|2507.07955v2|p2|0"
+        ],
+        "ground_truth_retrieved": true,
+        "delivered_chunk_ids": [
+          "hnet|2507.07955v2|p2|0",
+          "hnet|2507.07955v2|p22|0",
+          "hnet|2507.07955v2|p23|0",
+          "hnet|2507.07955v2|p19|1"
+        ],
+        "cited_chunk": "2507.07955v2 p.2",
+        "canned_answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 445.1,
+        "total_ms": 448.5965999999735,
+        "wall_ms": 455.4,
+        "tokens_in": 4454,
+        "tokens_out": 66,
+        "answer": "Simple pooling such as compressing every d inputs is not data-dependent and performs poorly on modalities with variable information rates. [arXiv:2507.07955v2 p.2]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      },
+      {
+        "request_id": "wp11-eval-c-114348-015",
+        "paper_key": "cross",
+        "question": "How are encoder and decoder used differently in these models?",
+        "setting": "C",
+        "expected_facts": [
+          "encoder",
+          "decoder"
+        ],
+        "ground_truth_chunk_ids": null,
+        "ground_truth_retrieved": null,
+        "delivered_chunk_ids": [
+          "attention|1706.03762v7|p3|0",
+          "hnet|2507.07955v2|p19|1",
+          "hnet|2507.07955v2|p4|1",
+          "moshi|2410.00037v1|p9|1",
+          "hnet|2507.07955v2|p19|0"
+        ],
+        "cited_chunk": "1706.03762v7 p.3",
+        "canned_answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "http_status": 200,
+        "row_status": "ok",
+        "outcome_kind": "completed",
+        "refused": false,
+        "citations_valid": true,
+        "first_token_ms": 452.8,
+        "total_ms": 456.05939999995826,
+        "wall_ms": 463.8,
+        "tokens_in": 3911,
+        "tokens_out": 64,
+        "answer": "The encoder represents or compresses the input while the decoder generates the output, and each model arranges these roles differently. [arXiv:1706.03762v7 p.3]",
+        "grade": "correct",
+        "missing_facts": [],
+        "reasons": []
+      }
+    ]
+  },
+  "summary": {
+    "B": {
+      "n": 16,
+      "rows_recorded": 16,
+      "grade_counts": {
+        "correct": 10,
+        "incorrect": 6
+      },
+      "ground_truth_retrieved": "9/15",
+      "accuracy_excl_refusals": 62.5,
+      "ttft_ms_median": 33.0
+    },
+    "A": {
+      "n": 16,
+      "rows_recorded": 16,
+      "grade_counts": {
+        "correct": 8,
+        "incorrect": 8
+      },
+      "ground_truth_retrieved": "7/15",
+      "accuracy_excl_refusals": 50.0,
+      "ttft_ms_median": 32.8
+    },
+    "C": {
+      "n": 16,
+      "rows_recorded": 16,
+      "grade_counts": {
+        "correct": 12,
+        "incorrect": 4
+      },
+      "ground_truth_retrieved": "11/15",
+      "accuracy_excl_refusals": 75.0,
+      "ttft_ms_median": 444.6
+    }
+  }
+}

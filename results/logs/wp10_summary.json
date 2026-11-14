@@ -1,0 +1,231 @@
+{
+  "daily429": {
+    "scenario": "daily429",
+    "run_id": "wp10-daily429-103408",
+    "offers": 12,
+    "rows_recorded": 12,
+    "row_status_counts": {
+      "rate_limited": 12
+    },
+    "http_status_counts": {
+      "429": 12
+    },
+    "outcome_kind_counts": {
+      "provider_rate_limit_daily": 12
+    },
+    "retries_sum": 0,
+    "ttft_ms": {},
+    "total_ms": {
+      "n": 12,
+      "min": 38.1,
+      "median": 91.7,
+      "p95": 119.3,
+      "max": 133.7
+    },
+    "wall_ms": {
+      "n": 12,
+      "min": 57.6,
+      "median": 101.3,
+      "p95": 128.8,
+      "max": 162.2
+    },
+    "wall_clock_s": 0.8,
+    "plot": "results\\plots\\wp10_daily429.png"
+  },
+  "burst": {
+    "scenario": "burst",
+    "run_id": "wp10-burst-103656",
+    "offers": 60,
+    "rows_recorded": 60,
+    "row_status_counts": {
+      "ok": 60
+    },
+    "http_status_counts": {
+      "200": 60
+    },
+    "outcome_kind_counts": {
+      "completed": 60
+    },
+    "retries_sum": 120,
+    "ttft_ms": {
+      "n": 60,
+      "min": 594.3,
+      "median": 3003.6,
+      "p95": 3617.0,
+      "max": 4093.6
+    },
+    "total_ms": {
+      "n": 60,
+      "min": 1156.1,
+      "median": 3574.3,
+      "p95": 4187.2,
+      "max": 4605.0
+    },
+    "wall_ms": {
+      "n": 60,
+      "min": 1282.1,
+      "median": 3632.1,
+      "p95": 4239.2,
+      "max": 4718.3
+    },
+    "wall_clock_s": 10.0,
+    "plot": "results\\plots\\wp10_burst.png"
+  },
+  "minute429": {
+    "scenario": "minute429",
+    "run_id": "wp10-minute429-105451",
+    "offers": 20,
+    "rows_recorded": 20,
+    "row_status_counts": {
+      "rate_limited": 20
+    },
+    "http_status_counts": {
+      "429": 20
+    },
+    "outcome_kind_counts": {
+      "provider_rate_limit_minute": 20
+    },
+    "retries_sum": 40,
+    "ttft_ms": {},
+    "total_ms": {
+      "n": 20,
+      "min": 1480.3,
+      "median": 1882.3,
+      "p95": 2070.2,
+      "max": 2093.0
+    },
+    "wall_ms": {
+      "n": 20,
+      "min": 1484.0,
+      "median": 1886.2,
+      "p95": 2074.1,
+      "max": 2104.0
+    },
+    "wall_clock_s": 19.2,
+    "plot": "results\\plots\\wp10_minute429.png"
+  },
+  "breaker": {
+    "scenario": "breaker",
+    "run_id": "wp10-breaker-104043",
+    "offers": 35,
+    "rows_recorded": 35,
+    "row_status_counts": {
+      "error": 25,
+      "ok": 10
+    },
+    "http_status_counts": {
+      "200": 10,
+      "502": 25
+    },
+    "outcome_kind_counts": {
+      "breaker_open": 25,
+      "completed": 10
+    },
+    "retries_sum": 21,
+    "ttft_ms": {
+      "n": 10,
+      "min": 337.2,
+      "median": 349.6,
+      "p95": 357.0,
+      "max": 357.0
+    },
+    "total_ms": {
+      "n": 35,
+      "min": 18.3,
+      "median": 63.1,
+      "p95": 792.9,
+      "max": 1449.0
+    },
+    "wall_ms": {
+      "n": 35,
+      "min": 27.1,
+      "median": 71.2,
+      "p95": 813.6,
+      "max": 1483.2
+    },
+    "wall_clock_s": 27.1,
+    "plot": "results\\plots\\wp10_breaker.png"
+  },
+  "real_probe": {
+    "scenario": "real_probe",
+    "run_id": "wp10-real_probe-105851",
+    "offers": 10,
+    "rows_recorded": 10,
+    "row_status_counts": {
+      "ok": 2,
+      "rate_limited": 8
+    },
+    "http_status_counts": {
+      "200": 2,
+      "429": 8
+    },
+    "outcome_kind_counts": {
+      "completed": 1,
+      "quota_block_local": 8,
+      "refusal": 1
+    },
+    "retries_sum": 2,
+    "ttft_ms": {
+      "n": 1,
+      "min": 1682.7,
+      "median": 1682.7,
+      "p95": 1682.7,
+      "max": 1682.7
+    },
+    "total_ms": {
+      "n": 10,
+      "min": 9.7,
+      "median": 12.2,
+      "p95": 2188.0,
+      "max": 2188.0
+    },
+    "wall_ms": {
+      "n": 10,
+      "min": 16.9,
+      "median": 19.6,
+      "p95": 2205.8,
+      "max": 2205.8
+    },
+    "wall_clock_s": 274.4,
+    "plot": "results\\plots\\wp10_real_probe.png"
+  },
+  "baseline": {
+    "scenario": "baseline",
+    "run_id": "wp10-baseline-111329",
+    "offers": 60,
+    "rows_recorded": 60,
+    "row_status_counts": {
+      "ok": 60
+    },
+    "http_status_counts": {
+      "200": 60
+    },
+    "outcome_kind_counts": {
+      "completed": 60
+    },
+    "retries_sum": 120,
+    "ttft_ms": {
+      "n": 60,
+      "min": 823.8,
+      "median": 864.4,
+      "p95": 901.9,
+      "max": 939.1
+    },
+    "total_ms": {
+      "n": 60,
+      "min": 1642.0,
+      "median": 1704.6,
+      "p95": 1758.1,
+      "max": 1834.1
+    },
+    "wall_ms": {
+      "n": 60,
+      "min": 1652.0,
+      "median": 1731.6,
+      "p95": 1789.9,
+      "max": 1864.3
+    },
+    "wall_clock_s": 26.8,
+    "plot": "results\\plots\\wp10_baseline.png"
+  }
+}

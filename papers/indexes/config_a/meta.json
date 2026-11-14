@@ -1,0 +1,1 @@
+{"config_name":"A","chunk_tokens":300,"overlap_tokens":50,"model_name":"sentence-transformers/all-MiniLM-L6-v2","n_chunks":387,"dim":384,"built_at":"2026-11-10T11:50:21+00:00"}

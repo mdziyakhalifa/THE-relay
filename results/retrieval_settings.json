@@ -1,0 +1,29 @@
+{
+  "note": "Phase-1 retrieval configurations; column values A/B/C resolve here. similarity_threshold and max_context_tokens are the shared app defaults.",
+  "settings": {
+    "A": {
+      "chunk_tokens": 300,
+      "overlap_tokens": 50,
+      "top_k": 3,
+      "rerank": false,
+      "similarity_threshold": 0.25,
+      "max_context_tokens": 3000
+    },
+    "B": {
+      "chunk_tokens": 500,
+      "overlap_tokens": 80,
+      "top_k": 5,
+      "rerank": false,
+      "similarity_threshold": 0.25,
+      "max_context_tokens": 3000
+    },
+    "C": {
+      "chunk_tokens": 800,
+      "overlap_tokens": 120,
+      "top_k": 5,
+      "rerank": true,
+      "similarity_threshold": 0.25,
+      "max_context_tokens": 3000
+    }
+  }
+}
